@@ -1,0 +1,68 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a82fb, #fc5c7d);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+h2 {
+  font-family: 'Bangers', cursive;
+  font-weight: 700;
+  font-size: 22px;
+  color: rgb(0, 0, 0); 
+  line-height: 1.2;
+  text-shadow: 
+    4px 4px 0px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  padding: 10px 20px; 
+  border-radius: 10px;
+  border: 3px solid rgba(245, 245, 47, 0.05);
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
