@@ -28,9 +28,12 @@ function generateRandomHex(){
 }
 
 function copyHex(){
-  const gradient = `background: linear-gradient(45deg, #${hex1}, #${hex2})`
+  const displayedHex1 = document.querySelector("#hex1").innerHTML
+  const displayedHex2 = document.querySelector("#hex2").innerHTML
+  const gradient = `background: linear-gradient(45deg, #${displayedHex1}, #${displayedHex2})`
   navigator.clipboard.writeText(gradient)
 }
+
 
 function applyPreviousGradient(){
   if (prevHex1 && prevHex2) {
